@@ -47,7 +47,8 @@ try{
    return res.status(404).json({ success: false, message: "Food not found" });
 }
 
- fs.unlink(`uploads/${food.image}`,()=>{})
+ // fs.unlink(`uploads/${food.image}`,()=>{})
+     fs.unlink(`/tmp/uploads/${food.image}`, () => { });
 
  await foodModel.findByIdAndDelete(id);
 res.json({success:true,message:"Food removed"});

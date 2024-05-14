@@ -1,0 +1,37 @@
+.AppDownload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    font-size: max(3vw,20px);
+}
+
+.AppDownloadContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.AppDownloadContent p{
+font-size: max(3vw,20px);
+font-weight: 500;
+}
+
+.imagesDownload{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: max(30px,2vw);
+}
+.imagesDownload img{
+height: 60px;
+width: max(20vw,120px);
+max-width: 180px;
+border: none;
+cursor: pointer;
+transition: 0.5s;
+}
+.imagesDownload img:hover{
+transform: scale(1.05);
+}

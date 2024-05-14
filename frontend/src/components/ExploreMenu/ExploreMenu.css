@@ -1,0 +1,48 @@
+.exploreMenu{
+display: flex; 
+flex-direction: column;
+gap: 20px;
+}
+
+.exploreMenu h1{
+font-size: 500;
+color: #262626;
+}
+
+.exploreMenu-text{
+line-height: 1.5;
+color: #676767;
+}
+
+.exploreMenu-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+overflow-x: scroll;
+gap: 35px;
+margin: 20px 0;
+}
+
+.exploreMenu-list {
+    scrollbar-width: none; /* For Firefox */
+  }
+
+
+.menu-list-item img{
+width: 7.5vw;
+cursor: pointer;
+min-width: 80px;
+border-radius: 50%;
+}
+
+.menu-list-item p{
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.menu-list-item .active{
+border: 4px solid tomato;
+
+}

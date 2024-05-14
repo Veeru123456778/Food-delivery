@@ -1,0 +1,9 @@
+.MainHome{
+    display: flex;
+    width: 100%;
+}
+
+.Home{
+    width: 80%;
+    margin-left: 10%; 
+}

@@ -1,0 +1,64 @@
+.main-place-order{
+    width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 90px;
+}
+
+.place-order-form{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.place-order-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.place-order-left .multi-fields{
+display: flex;
+gap: 5px;
+}
+
+.place-order-left input{
+    width: auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid #eaeaea;
+    border-radius: 4px;
+}
+.place-order-left  p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.place-order-right{
+max-width: 50%;
+width: 40%;
+}
+
+.place-order-right button{
+width: 55%;
+}
+
+
+@media (max-width:1050px) {
+    .place-order-form{
+flex-direction: column; 
+gap: 50px; 
+  }
+  .place-order-left input{  
+    width: 50%;
+}
+
+.place-order-right{
+    min-width: 250px;
+    width: 60%;
+    }
+
+    .place-order-right{
+        min-width: 200px;
+    }
+}

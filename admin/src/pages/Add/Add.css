@@ -1,0 +1,81 @@
+.add{
+    margin-top: 35px;
+    color:  #6d6d6d;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+.add input:focus{
+    outline-color:black ;
+}
+
+.form-add{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-add p{
+white-space: nowrap;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-img-upload img{
+max-width: 120px;
+max-height: 100px;
+}
+
+.product-category-price{
+    display: flex;
+    gap: 20px;
+}
+
+input{
+    padding: 10px;
+
+}
+select{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #a9a9a9 ;
+    max-width: 200px;
+    width: 100px;
+}
+.add-product-name input{
+    height: 30px;
+}
+
+.add-price input{
+padding: 10px;
+width: 100px;
+border: 1px solid #a9a9a9 ;
+}
+
+textarea{
+    max-height: 200px;
+    height: 100px;
+    padding: 10px;
+}
+.add-btn{
+    background-color: black;
+    color: white;
+    max-width: 120px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+@media (max-width:460px) {
+    .add{ 
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    margin-left: 0px;
+}
+}

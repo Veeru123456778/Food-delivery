@@ -13,7 +13,12 @@ const app=express();
 const port=5000;
 
 //middlewares
-app.use(cors());  //we can access backend from any frontend
+app.use(cors({
+origin:"https://food-delivery-frontend-psi.vercel.app",
+methods:['GET','POST','PUT','DELETE'],
+allowedHeaders:['Content-Type'],
+}));
+//we can access backend from any frontend
 app.use(express.json()) //for parsing objects into json from frontend to backend
 
 

@@ -5,10 +5,17 @@ import { addFood, list_food, remove_food } from '../controllers/foodController.j
 const foodRouter = express.Router();
 
 // Image storage engine
-const storage =multer.diskStorage({
-destination:"uploads",
-filename:(req,file,callback)=> {return callback(null,`${Date.now()}${file.originalname}`)}
-})
+// const storage =multer.diskStorage({
+// destination:"uploads",
+// filename:(req,file,callback)=> {return callback(null,`${Date.now()}${file.originalname}`)}
+// })
+
+const storage = multer.diskStorage({
+  destination: '/tmp/uploads', // Use /tmp/uploads directory for temporary storage
+  filename: (req, file, callback) => {
+    callback(null, `${Date.now()}${file.originalname}`);
+  }
+});
 
 const upload=multer({storage:storage});
 

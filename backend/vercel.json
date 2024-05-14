@@ -1,5 +1,4 @@
 {
-  "entrypoint": "server.js",
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs12.x"

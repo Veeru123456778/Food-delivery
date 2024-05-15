@@ -6,11 +6,20 @@ import userRouter from './routes/userRoutes.js'
 import 'dotenv/config'   //for env randomsecret variable//
 import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoutes.js';
+import fs from 'fs';
+import path from 'path';
+
+// Ensure /tmp/uploads directory exists
+const uploadDir = path.join('/tmp', 'uploads');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
 
 //app config
 
 const app=express();
-const port=5000;
+const port = process.env.PORT || 5000;
+
 
 //middlewares
 app.use(cors({
@@ -21,6 +30,10 @@ allowedHeaders:['Content-Type'],
 //we can access backend from any frontend
 app.use(express.json()) //for parsing objects into json from frontend to backend
 
+
+
+// Serve static files
+app.use('/images', express.static(uploadDir));
 
 //db connection
 
